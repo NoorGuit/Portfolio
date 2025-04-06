@@ -54,7 +54,7 @@ body{
   height: 384px;
   text-align: center;
   border: 10px double var(--ColorLabels);
-  left: 75%;
+  left: 73%;
   margin-top: -200px;
   position: relative;
 }
