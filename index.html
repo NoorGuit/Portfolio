@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Portfolio Noor Guit</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Processing scripts -->
+     <script type="text/javascript" src="libraries/p5.min.js"></script>
+     <script type="text/javascript"> p5.disableFriendlyErrors = true; </script>
+    </head>
+
+  <body> 
+    <div class="wrapper">
+      <div class="sideTab" onscroll="sideTabScroll(event)">
+        <button class="sideTabLinks" onClick="openTab(event, 'Home')" id="defaultOpen">Home</button>
+        <button class="sideTabLinks" onClick="openTab(event, 'Portfolio')">Portfolio</button>
+      </div>
+      <img src="img/Flowers.png"alt="A picture of flowers" style="width:15%; height:70%; position: fixed; margin-top: 220px">
+
+      <div id="Home" class="tabContent">
+        <div class="contentBox" style="width:50%; font-size: 30px; text-align: center;">
+          <p>Hi, my name is Noor Guit!</p>
+          <p>I'm a first year Creative Technology student.</p>
+        </div>
+        <div>
+          <div class="photoMe"><img src="img/me.jpg"alt="A picture of me" style="width:256px;height:384px;"></div>
+          <div class="contentBox" style="left:63%; margin-top: 25px; width:256px; background-color: #e2627eb8; text-align: center; font-size: 30px;">Class of 2027</div>
+        </div>
+        <div class="contentHeaders" style="width:50%; font-size:30px; margin-top: -280px">Creative Technology</div>
+        <div class="contentBox" style="width:50%; font-size:20px;">
+          <p>
+            Creative technology (CreaTe) is a bachelor's programme thaught at the University of Twente and Vrije Universiteit Amsterdam.
+            The study challenges you to develop innovative applications while using the latest technology.
+            It is a diverse study that teaches students how to think creatively in the process of coming up with innovative solutions, while also enabling them to execute these solutions into tangible prototypes.
+            Learn more about this bachelor's programme at <a href="https://www.utwente.nl/en/create/" target="_blank" class="inlineLink">utwente.nl</a>
+            or <a href="https://vu.nl/en/education/bachelor/creative-technology" target="_blank" class="inlineLink">vu.nl</a>.
+          </p>
+          <p>
+            During my short time participating in this programme, I have already completed many projects and worked with a ton of software. 
+            All my completed projects can be found on this website.
+          </p>
+        </div>
+        <div class="bufferFootnote"></div>
+      </div>
+
+      <div id="Portfolio" class="tabContent">
+        <div class = "wrapper">
+          <div class = "Subjects">
+            <button class = "SubjectsLinks" onCLick = "openTab(event, 'Fusion 360')">
+              <img src = "img/FusionLogo.png" alt = "A picture of the fusion logo" style = "width : 200px; height : 200px">
+              <div class = "SubjectsName">Fusion 360</div>
+            </button>
+          </div>
+          <div class = "Subjects">
+            <button class = "SubjectsLinks" onClick = "openTab(event, 'Blender')">
+              <img src = "img/BlenderLogo.webp" alt = "A picture of the Blender logo" style = "width : 244px; height : 200px">
+              <div class = "SubjectsName">Blender</div>
+            </button>
+          </div>
+          <div class = "Subjects">
+            <button class = "SubjectsLinks" onClick = "openTab(event, 'Processing')">
+              <img src = "img/ProcessingLogo.png" alt = "A picture of the Processing logo" style = "width: 180px; height : 180px; padding : 10px">
+              <div class = "SubjectsName">Processing</div>
+            </button>
+          </div>
+        </div>
+      </div>
+        
+      <div id = "Fusion 360" class = "tabContent">
+        <div class="contentHeaders">Fusion 360</div>
+        <div class="contentBox" style="font-size: 20px;">
+          <p>
+           Fusion 360 is a computer-aided design (CAD), computer-aided manufacturing (CAM), computer-aided engineering (CAE) and printed circuit board (PCB) design software application.
+            Fusion has built-in capabilities for 3D modeling, simualtion and documentation.
+            <a href="https://www.autodesk.com/products/fusion-360/overview" target="_blank" class="inlineLink">Learn more</a>
+          </p>
+          <p>In the first module of my study programme this software was explained to us during a course in a few tutorials. This are the two assignments from those tutorials.</p>
+          <div class="contentHeaders" style="max-width: 332.75px; margin-right: 30px;"><img src="img/DIY1.png" alt="A picture of DIY assignment 1" style="width: 332.75px; height: 167.25px"></div>
+          <div class="contentHeaders" style="max-width: 201px"><img src="img/DIY2.png" alt="A picture od DIY assignment 2" style="width: 201px; height: 166.75px"></div>
+          <p>For the final assignment of that course, we had to create a nutcracker in groups of three. I was assigned to create the body in the shape of a pinguin.</p>
+          <div class="contentHeaders" style="max-width: 205.75px"><img src="img/DIYfinal.png" alt="A picture of the final assingment" style="width: 205.75px; height: 172.25px"></div>
+          <p>During module 2 of the study programme, I also used the software to create a casing for our project. This model of the casing was then used to lasercut a part of our prototype. Inside this casing, an arduino and breadboard was placed.</p>
+          <div class="contentHeaders" style="max-width: 237.25px"><img src="img/casingSE.png" alt="A picture of the casing for the Smart Environments project" style="width: 237.25px; height: 160px"></div>
+        </div>
+        <div class = "bufferFoornote"></div>
+      </div>
+
+      <div id = "Blender" class = "tabContent">
+        <div class="contentHeaders">Blender</div>
+        <div class="contentBox">
+         <p>Blender is a open-source 3D computer graphics software tool. It is used for creating animated films, visual effects, art, 3D-printed models, motion graphics, interactive 3D applications and virtual reality.
+           <a href="https://www.blender.org/" target="_blank" class="inlineLink">Learn more</a>
+         </p>
+         <p>During the course of the second module, a course about Blender was taught. So, I have completed three assingments using this software.
+          The first assignment was to import an assignment from Fusion and create an animation with it.
+         </p>
+         <video class="gallery" autoplay muted loop style="max-width: 400px">
+           <source src="img/Video.mp4" type="video/mp4" style="width: 400px; height: 285px">
+           Your browser does not support the video tag.
+         </video>
+         <p>The second assignment was to create a minecraft-like temple on a pedestal. In this process UV-textures and wrapping was used.</p>
+         <div class="contentHeaders" style="max-width: 320px; margin-right: 30px"><img src="img/Minecraft1.jpg" alt="A picture of the minecraft temple" style="width:320px; height: 180px"></div>
+         <div class="contentHeaders" style="max-width: 320px"><img src="img/Minecraft2.jpg" als="A picture of the minecraft temple" style="width: 320px; height: 180px"></div>
+         <p>The final assignment was to model a japanese house. In this assignment different techniques for modelling and texturing were used.</p>
+         <div class="contentHeaders" style="max-width: 320px; margin-right: 30px"><img src="img/House1.png" alt="A picture of the japanese house" style="width: 320px; height: 180px"></div>
+         <div class="contentHeaders" style="max-width: 320px; margin-right: 30px"><img src="img/House2.png" alt="A picture of the japanese house" style="width: 320px; height: 180px"></div>
+         <div class="contentHeaders" style="max-width: 320px; margin-right: 30px"><img src="img/House3.png" alt="A picture of the japanese house" style="width: 320px; height: 180px"></div>
+         <div class="contentHeaders" style="max-width: 320px"><img src="img/House4.png" alt="A picture of the japanese house" style="width: 320px; height: 180px"></div>
+        </div>
+        <div class="bufferFootnote"></div>
+      </div> 
+
+      <div id = "Processing" class = "tabContent">
+        <div class = "contentHeaders">Processing</div>
+        <div class = "contentBox">
+          <p>
+            Processing is an open-source programming language and development environment desinged for artists, desingers, and creative profesionals to create interactive graphics, animations, and visual application.
+            It promotes software literacy within the visual arts. Processing is built on top of the Java programming language, making it accessible for those looking to learn coding in visual context.
+            <a href = "https://processing.org/" target = "_blank" class = "inlineLink">Learn more</a>
+          </p>
+          <p>In my study programme Processing has been used in almost every programming course. So, I have done a great deal assignment using this software. These assignments can be found below.</p>
+        </div>
+        <div class = "contentHeaders">Creature assignment</div>
+        <div class = "contentBox">
+          <p>
+            In this assignment we had to draw a creature and animate it. This assignment introduced us to the basic programming principles. Our creature had to have classes, animation and user-interaction. 
+            Additionally, we also had to use the concepts of abstraction, encapsulation and user interaction.
+          </p>
+          <p>
+            For my creature assignment I made a cat. The program displays five cats. 
+            All the cats can be moved to wherever you want, but not outside the canvas. 
+            When you move or click on a cat, the cat will change its position. It will seem like he is jumping in the air.
+            By pressing any key, all the cats will jump at the same time. Each cat has a different height and distance it will travel before landing again. 
+            When a cat is jumping it will also be in its jumping position.
+            The cats can ofcourse not bounce out of frame. If the cat hits one of the two sidewalls, he will bounce back. 
+            If the jump is too high, the cat will hit its head and bounce back down.
+
+            Each cat also has its own butterfly. At the start of the program these butterflies will fly around the screen.
+            When a butterfly hits the left ear of his owner cat, it will stay there.
+            A butterfly can land on its owner ear by flying on it, or you can move the cat towards the butterfly.
+            You don't know wich butterfly belongs to which cat, so you will just have to try until one sticks.
+            Once sitting on the ear, a butterfly will calmly remain there while the cat is being moved. 
+            But watch out! If a cat jumps with a butterfly on its ear, it will scare the butterfly and it will fly away again.
+          </p>
+          <div class = "contentHeaders" style = "max-width: 500px"><img src = "img/Creature.png" alt = "a picture of the creatures" style = "width: 500px; height: 340px"></div>
+        </div>
+        <div class = "bufferFootnote"></div>
+      </div>
+
+     <div class="banner">Portfolio Website</div>
+       <div class="footnote">
+         This website has been made from the ground up, using HTML and CSS code. While doining so online recources, such as
+         <a href="https://www.w3schools.com/" target="_blank" class="inlineLink">W3Schools</a> have been used. 
+         Also, the help of Stan Fruijtier has been called upon.
+       </div>
+     </div>
+    </div>
+
+    <script type="text/javascript" src="javaScript/sideTab.js"></script>
+  </body>
+</html>

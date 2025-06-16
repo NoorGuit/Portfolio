@@ -1,0 +1,195 @@
+:root {
+  --ColorLabels: #e2627eb8;
+  --ColorBackGround: #D1C6D5;
+  --ColorContentHeaders: #0789b475;
+  --ColorContentBoxes: #5cbbdb58;
+  --ColorText: white;
+}
+
+head {
+  overflow-x:visible;
+}
+
+body{
+  background-color: var(--ColorBackGround);
+}
+
+.banner {
+  border: none;
+  background-color: var(--ColorLabels); 
+  color: var(--ColorText);
+  text-align: center;
+  font-size: 70px;
+  display: block;
+  width: 98.5%;
+  height: 80px;
+  position: fixed;
+  top: 10px;
+}
+
+.footnote {
+  border: none;
+  background-color: var(--ColorBackGround);
+  text-align: center;
+  display: block;
+  position: fixed;
+  font-size: 20px;
+  color: rgb(169, 168, 168);
+  bottom: 5px;
+}
+
+.bufferFootnote {
+  border:none;
+  background-color: var(--ColorBackGround);
+  display: block;
+  height: 50px;
+  width: 100%;
+  top: 100px;
+  position: relative;
+}
+
+.photoMe{
+  background-color: var(--ColorBackGround);
+  width: 256px;
+  height: 384px;
+  text-align: center;
+  border: 10px double var(--ColorLabels);
+  left: 63%;
+  margin-top: -200px;
+  position: relative;
+}
+
+.inlineLink {
+  color:wheat;
+}
+
+.gallery {
+  display: inline-grid;
+  transition: 0.5s;
+  z-index:10000;
+  flex:1;
+  background-color: var(--ColorContentHeaders);
+  color: var(--ColorText);
+  text-align: center;
+  margin-bottom:10px;
+  padding: 5px 16px;
+  border-radius: 10px;
+  align-self: center;
+  font-size: 30px;
+}
+
+/*style the sideTab*/
+.sideTab {
+  position: fixed;
+  border: 4px solid var(--ColorLabels);
+  background-color: var(--ColorBackGround);
+  text-align: center;
+  margin: 2px 0 0 0;
+  width: 15%;
+  height: 100px;
+  translate: 0 100px;
+}
+
+
+/*style the buttons in sideTab*/
+.sideTab button {
+  position: relative;
+  background-color: var(--ColorBackGround); 
+  color: var(--ColorText); 
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  border: none;
+  cursor: pointer;
+}
+
+/*style the buttons in sideTab when hovered*/
+.sideTab button:hover {
+  background-color: var(--ColorLabels);
+  color: var(--ColorText);
+  width: 100%;
+  text-align: center;
+  height: 50px;
+}
+
+/*style the active buttons*/
+.sideTab button:active {
+  background-color: var(--ColorLabels);
+  color: var(--ColorText);
+  width: 100%;
+  height: 50px;
+  translate: 0 0 2;
+  z-index: 10;
+  transition: z-index 10s, 0.5;
+}
+
+.tabContent{
+  margin-top: 100px;
+  margin-left: 18%;
+  width: 100%;
+}
+
+.Subjects {
+  margin-right: 20px;
+  margin-bottom: 20px;
+} 
+
+.Subjects button {
+  text-align: center;
+  border: none;
+  background-color: var(--ColorContentBoxes);
+  border-radius: 20px;
+}
+
+.SubjectsName {
+  text-align: center;
+  color: var(--ColorText);
+  background-color: var(--ColorContentHeaders);
+  width: 95%;
+  height: 40px;
+  font-size: 30px;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.wrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
+}
+
+.contentHeaders {
+  flex:1;
+  background-color: var(--ColorContentHeaders);
+  color: var(--ColorText);
+  text-align: center;
+  margin-bottom:10px;
+  padding: 5px 16px;
+  border-radius: 10px;
+  align-self: center;
+  font-size: 30px;
+  width: 90%
+}
+
+/*style of the boxes with content*/
+.contentBox {
+  flex:1;
+  display: flex;
+  background-color: var(--ColorContentBoxes);
+  color: var(--ColorText);
+  margin-bottom:10px;
+  padding: 5px 16px;
+  border-radius: 20px;
+  flex-wrap: wrap;
+  position: relative;
+  font-size: 20px;
+  width: 90%;
+} 
